@@ -15,52 +15,83 @@
     }
   
     h1,h2 {
+        font-size: 2vw;
             text-align: center;
-            margin: 30px ;
+            margin: 0px ;
         }
-   
-    .imagem {
-        width: 25%;
-        padding: 0% 37.5%;
-    }
-    /* .inputão {
-        margin-left: 034%; 
-    } */
-    .resultadoFinal {
-        margin-left: 028%; 
-        padding: 5px;
-        border: solid;
-        border-width: 0px;
-        border-color: yellow;
-        background-color: ;
-        font-size: 40px;
-    }
-    /* .scripto{
-        text-align: center;  
-    } */
-    .body2{
-        margin: 0% 30%;
-        width: 40%;
+
+    h3 {
+        font-size: 2vw;
+    text-align: center;
+    margin: 3% 0px 0.5%   
     }
 
+    .imagem {
+       
+        position: ;
+        text-align: center;
+        height: 5%;
+    } 
+
+    .resultadoFinal {
+        position: absolute;
+        margin: auto;
+        width: 5%;
+        height: 8%;
+        padding: 5px;
+        text-align: center;
+        left: 0;
+        right: 0; 
+        border: solid;
+        border-width: 5px;
+        border-color: #0f0;
+        font-size: 40px;
+
+    }
+
+    .inputão {
+        width: 13%;
+        height: 2.5%;
+        position: absolute;
+        margin : auto;
+        left: 0;
+        right: 0;
+    }
+
+    .butãozinho {
+        position: absolute;
+        width: 7%;
+        height: 5%;
+        text-align: ;
+        margin : auto;
+        left: 0;
+        right: 0;
+        background-color: red;
+        color: yellow;
+        font: bold;
+        font-size: large;
+    }
 
 </style>
 
 <body>
     <h1> CODIGO DE PONTO </h1>
-    <img class="imagem" src="https://live.staticflickr.com/65535/52130398003_cbf6ccc6da_c.jpg">
-    <H2 >DIGITE O CODIGO DE PONTO:</H2>
-    
-    <div class="body2">
-    <input class="inputão" type="number" id="dado" name="dado">
-    <button class="butãozinho" onclick="resultFinal()">Buscar forma</button>
-    </div>
 
-    <h2 id="result">FORMA: </h2>
-    <label class="resultadoFinal" id="resultadoFinal" for="resultadoFinal"> Digite o código de ponto</label>
+    <div class="imagem">
+        <img  src="https://live.staticflickr.com/65535/52130398003_cbf6ccc6da_c.jpg">
+    </div>
+    
+    <h1 >DIGITE O CODIGO DE PONTO:</h1>
+      
+    <input class="inputão" type="number" id="dado" name="dado"><br>
+    <p> </p>
+    <button class="butãozinho" onclick="resultFinal()">Buscar forma</button><br>
+
+    <h3 id="result">FORMA: </h3>
+    <label class="resultadoFinal" id="resultadoFinal" for="resultadoFinal"> </label>
 </body>
 
-<script class="scripto">
+<script >
 
     formas1 = { "1": "1111110010011", "2": "1111101010011", "3": "1111101001011", "4": "1111100110011", "5": "1111100101011", "6": "1111100100111", "7": "1111011010011", "8": "1111011001011", "9": "1111010110011", "10": "1100100111111", "11": "1111001001111", "12": "1111010101011", "13": "1111010100111", "14": "1111010011011", "15": "1111010010111", "16": "1111001110011", "17": "1111001101011", "18": "1111001100111", "19": "1101110101011", "20": "1100101011111", "21": "1101010101111", "22": "1110101010111", "23": "1111001011011", "24": "1111001010111", "25": "1110111010011", "26": "1110111001011", "27": "1110110110011", "28": "1110110101011", "29": "1101010111011", "30": "1101001011111", "31": "1110010101111", "32": "1101101001111", "33": "1110011100111", "34": "1110110100111", "35": "1110110011011", "36": "1110110010111", "37": "1110101110011", "38": "1110101101011", "39": "1101110011011", "40": "1100110011111", "41": "1101100101111", "42": "1110101001111", "43": "1110010110111", "44": "1101101011011", "45": "1110101100111", "46": "1110101011011", "47": "1110100111011", "48": "1110011110011", "49": "1101100111011", "50": "1101010011111", "51": "1110100101111", "52": "1100101110111", "53": "1101100110111", "54": "1110011010111", "55": "1101011101011", "56": "1110011101011", "57": "1110011011011", "58": "1110010111011", "59": "1101101110011", "60": "1110010011111", "61": "1100111001111", "62": "1101001110111", "63": "1110100110111", "64": "1101101010111", "65": "1101011100111", "66": "1100111110011", "67": "1101111010011", "68": "1101111001011", "69": "1100111011011", "70": "1100101101111", "71": "1101011001111", "72": "1100110110111", "73": "1100111010111", "74": "1101110010111", "75": "1101101100111", "76": "1100101111011", "77": "1101011011011", "78": "1101110110011", "79": "1101011110011", "80": "1101001101111", "81": "1110011001111", "82": "1101010110111", "83": "1101011010111", "84": "1100111100111", "85": "1101110100111", "86": "1101001111011", "87": "1100110111011", "88": "1101101101011", "89": "1100111101011", "90": "1100110101111", "Feito por Esdras": "12345"}          
 
